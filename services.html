@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="si" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Stupa Construction</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        stupa: {
+                            gold: '#C5A059',
+                            dark: '#2C1810',
+                            light: '#F9F5F0',
+                            accent: '#8B4513'
+                        }
+                    },
+                    fontFamily: {
+                        heading: ['Cinzel', 'serif'],
+                        body: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-body text-gray-800 bg-stupa-light flex flex-col min-h-screen">
+
+    <!-- Navigation (Same as Home) -->
+    <nav class="bg-white shadow-md fixed w-full z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <div
+                    class="w-10 h-10 bg-stupa-gold rounded-full flex items-center justify-center text-white font-heading font-bold text-xl shadow-lg">
+                    S</div>
+                <h1 class="text-xl font-heading font-bold text-stupa-dark">W.G. Siripala Gamage</h1>
+            </a>
+            <div class="hidden md:flex items-center gap-8 font-medium text-sm uppercase tracking-wide">
+                <a href="index.html" class="hover:text-stupa-gold">Home</a>
+                <a href="about.html" class="hover:text-stupa-gold">About</a>
+                <a href="services.html" class="text-stupa-gold font-bold border-b-2 border-stupa-gold pb-1">Services</a>
+                <a href="projects.html" class="hover:text-stupa-gold">Projects</a>
+                <a href="ongoing.html" class="hover:text-stupa-gold">Ongoing</a>
+                <a href="contact.html"
+                    class="bg-stupa-gold text-white px-5 py-2 rounded-full hover:bg-stupa-accent">Contact</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-stupa-dark focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg">
+            <div class="flex flex-col p-4 space-y-4 font-medium text-center">
+                <a href="index.html" class="hover:text-stupa-gold">Home</a>
+                <a href="about.html" class="hover:text-stupa-gold">About</a>
+                <a href="services.html" class="text-stupa-gold font-bold">Services</a>
+                <a href="projects.html" class="hover:text-stupa-gold">Projects</a>
+                <a href="ongoing.html" class="hover:text-stupa-gold">Ongoing</a>
+                <a href="contact.html"
+                    class="bg-stupa-gold text-white px-4 py-2 rounded-lg inline-block mx-auto hover:bg-stupa-accent">Contact
+                    Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-20 bg-stupa-dark text-white text-center">
+        <div class="container mx-auto px-6">
+            <h1 class="font-heading text-4xl md:text-5xl font-bold mb-4">Our Services</h1>
+            <p class="text-stupa-gold uppercase tracking-widest text-sm">Comprehensive Construction Solutions</p>
+        </div>
+    </header>
+
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Service Item 1 -->
+                <div class="flex gap-6 group">
+                    <div
+                        class="w-16 h-16 bg-white shadow-lg rounded-full flex-shrink-0 flex items-center justify-center text-stupa-gold text-2xl font-bold border border-stupa-gold group-hover:bg-stupa-gold group-hover:text-white transition-all">
+                        01</div>
+                    <div>
+                        <h3 class="font-heading text-2xl font-bold text-stupa-dark mb-3">Complete Stupa Construction
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            We handle new Stupa projects from the ground up ("Peshawa" to "Koth Kerella"). Our approach
+                            ensures structural stability using high-grade reinforced concrete or traditional brickwork
+                            as requested.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service Item 2 -->
+                <div class="flex gap-6 group">
+                    <div
+                        class="w-16 h-16 bg-white shadow-lg rounded-full flex-shrink-0 flex items-center justify-center text-stupa-gold text-2xl font-bold border border-stupa-gold group-hover:bg-stupa-gold group-hover:text-white transition-all">
+                        02</div>
+                    <div>
+                        <h3 class="font-heading text-2xl font-bold text-stupa-dark mb-3">Restoration & Waterproofing
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Specialized repair of cracks in ancient Stupas. We use modern waterproofing chemicals
+                            combined with traditional lime plasters to ensure the Stupa remains white and protected for
+                            years.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service Item 3 -->
+                <div class="flex gap-6 group">
+                    <div
+                        class="w-16 h-16 bg-white shadow-lg rounded-full flex-shrink-0 flex items-center justify-center text-stupa-gold text-2xl font-bold border border-stupa-gold group-hover:bg-stupa-gold group-hover:text-white transition-all">
+                        03</div>
+                    <div>
+                        <h3 class="font-heading text-2xl font-bold text-stupa-dark mb-3">Kotha & Chudamanikkaya Mounting
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            The pinnacle placement is the most sacred moment. We have specialized equipment and
+                            experienced teams to safely hoist and install the "Chudamanikkaya" (Crystal) and "Kotha".
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service Item 4 -->
+                <div class="flex gap-6 group">
+                    <div
+                        class="w-16 h-16 bg-white shadow-lg rounded-full flex-shrink-0 flex items-center justify-center text-stupa-gold text-2xl font-bold border border-stupa-gold group-hover:bg-stupa-gold group-hover:text-white transition-all">
+                        04</div>
+                    <div>
+                        <h3 class="font-heading text-2xl font-bold text-stupa-dark mb-3">Wahalkada & Architectural
+                            Details</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Detailed construction of Wahalkada (gateways), Moonstones, and other ornamental features
+                            that enhance the beauty of the Stupa complex.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-20 text-center bg-white p-10 rounded-xl shadow-lg border-l-8 border-stupa-gold">
+                <h3 class="font-heading text-2xl font-bold text-stupa-dark mb-4">Request a Consultation</h3>
+                <p class="text-gray-600 mb-8 max-w-2xl mx-auto">Not sure where to start? We provide free initial site
+                    visits to assess the land and provide accurate cost estimates.</p>
+                <a href="contact.html"
+                    class="bg-stupa-dark text-white px-8 py-3 rounded-full hover:bg-stupa-accent transition-colors">Contact
+                    Us Now</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-stupa-dark text-white pt-10 pb-8 mt-auto border-t border-stupa-gold/30">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 W.G. Siripala Gamage – Stupa Construction Services.</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

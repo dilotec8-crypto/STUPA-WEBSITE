@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="si" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ongoing Projects - Stupa Construction</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        stupa: {
+                            gold: '#C5A059',
+                            dark: '#2C1810',
+                            light: '#F9F5F0',
+                            accent: '#8B4513'
+                        }
+                    },
+                    fontFamily: {
+                        heading: ['Cinzel', 'serif'],
+                        body: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-body text-gray-800 bg-stupa-light flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <div
+                    class="w-10 h-10 bg-stupa-gold rounded-full flex items-center justify-center text-white font-heading font-bold text-xl shadow-lg">
+                    S</div>
+                <h1 class="text-xl font-heading font-bold text-stupa-dark">W.G. Siripala Gamage</h1>
+            </a>
+            <div class="hidden md:flex items-center gap-8 font-medium text-sm uppercase tracking-wide">
+                <a href="index.html" class="hover:text-stupa-gold">Home</a>
+                <a href="about.html" class="hover:text-stupa-gold">About</a>
+                <a href="services.html" class="hover:text-stupa-gold">Services</a>
+                <a href="projects.html" class="hover:text-stupa-gold">Projects</a>
+                <a href="ongoing.html" class="text-stupa-gold font-bold border-b-2 border-stupa-gold pb-1">Ongoing</a>
+                <a href="contact.html"
+                    class="bg-stupa-gold text-white px-5 py-2 rounded-full hover:bg-stupa-accent">Contact</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-stupa-dark focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg">
+            <div class="flex flex-col p-4 space-y-4 font-medium text-center">
+                <a href="index.html" class="hover:text-stupa-gold">Home</a>
+                <a href="about.html" class="hover:text-stupa-gold">About</a>
+                <a href="services.html" class="hover:text-stupa-gold">Services</a>
+                <a href="projects.html" class="hover:text-stupa-gold">Projects</a>
+                <a href="ongoing.html" class="text-stupa-gold font-bold">Ongoing</a>
+                <a href="contact.html"
+                    class="bg-stupa-gold text-white px-4 py-2 rounded-lg inline-block mx-auto hover:bg-stupa-accent">Contact
+                    Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-20 bg-stupa-dark text-white text-center">
+        <div class="container mx-auto px-6">
+            <h1 class="font-heading text-4xl md:text-5xl font-bold mb-4">Work In Progress</h1>
+            <p class="text-stupa-gold uppercase tracking-widest text-sm">Shaping the Future</p>
+        </div>
+    </header>
+
+    <section class="py-20">
+        <div class="container mx-auto px-6 max-w-5xl">
+
+            <!-- Project 1 -->
+            <div
+                class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row mb-12 hover:shadow-2xl transition-shadow border border-gray-100">
+                <div class="md:w-1/3 h-64 md:h-auto relative">
+                    <img src="https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=800&auto=format&fit=crop"
+                        class="w-full h-full object-cover">
+                    <div
+                        class="absolute top-4 left-4 bg-stupa-gold text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                        Under Construction</div>
+                </div>
+                <div class="p-8 md:w-2/3 flex flex-col justify-center">
+                    <h3 class="font-heading text-2xl font-bold text-stupa-dark mb-2">New Shrine Room Construction</h3>
+                    <p class="text-gray-500 text-sm mb-4"><span class="font-semibold text-stupa-accent">Location:</span>
+                        Dambulla, Central Province</p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Currently finishing the roof structure and preparing
+                        for traditional carvings. The main Buddha statue foundation has been laid.</p>
+
+                    <div class="mb-2 flex justify-between text-xs font-bold uppercase text-gray-500">
+                        <span>Progress</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 mb-6">
+                        <div class="bg-stupa-gold h-2.5 rounded-full" style="width: 75%"></div>
+                    </div>
+
+                    <div class="flex gap-4 text-sm text-gray-500">
+                        <div class="flex items-center gap-2">
+                            <svg class="w-4 h-4 text-stupa-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            <span>Started: Jan 2023</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <svg class="w-4 h-4 text-stupa-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span>Est. Completion: Dec 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div
+                class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row mb-12 hover:shadow-2xl transition-shadow border border-gray-100">
+                <div class="md:w-1/3 h-64 md:h-auto relative">
+                    <img src="https://images.unsplash.com/photo-1596727147705-5ec24345db59?q=80&w=800&auto=format&fit=crop"
+                        class="w-full h-full object-cover">
+                    <div
+                        class="absolute top-4 left-4 bg-stupa-gold text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                        Restoration</div>
+                </div>
+                <div class="p-8 md:w-2/3 flex flex-col justify-center">
+                    <h3 class="font-heading text-2xl font-bold text-stupa-dark mb-2">Historical Stupa Repainting</h3>
+                    <p class="text-gray-500 text-sm mb-4"><span class="font-semibold text-stupa-accent">Location:</span>
+                        Matara, Southern Province</p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Implementing a new waterproof coating and restoring
+                        the 'Hathares Kotuwa' section which was damaged by weather.</p>
+
+                    <div class="mb-2 flex justify-between text-xs font-bold uppercase text-gray-500">
+                        <span>Progress</span>
+                        <span>40%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 mb-6">
+                        <div class="bg-stupa-gold h-2.5 rounded-full" style="width: 40%"></div>
+                    </div>
+
+                    <div class="flex gap-4 text-sm text-gray-500">
+                        <div class="flex items-center gap-2">
+                            <svg class="w-4 h-4 text-stupa-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            <span>Started: June 2023</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <svg class="w-4 h-4 text-stupa-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span>Est. Completion: Feb 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stupa-dark text-white pt-10 pb-8 mt-auto border-t border-stupa-gold/30">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 W.G. Siripala Gamage – Stupa Construction Services.</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
